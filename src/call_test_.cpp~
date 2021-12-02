@@ -1,0 +1,9 @@
+#include "../include/call2.h"
+#include <iostream>
+
+int main()
+{
+  Call c(1, 300, 100, 0.1);
+  std::cout 
+  return 0;
+}

@@ -1,0 +1,9 @@
+#include "../include/cranck_nicholson2.h"
+#include "../include/call2.h"
+
+int main()
+{
+  Call c(1, 300, 100, 0.1);
+  Cranck_Nicholson crk(1000, 1000, c);
+  Col_Vector init = crk.get_init_cond();
+}

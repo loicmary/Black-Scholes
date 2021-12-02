@@ -1,0 +1,16 @@
+#include "../include/payoff2.h"
+
+Payoff::Payoff(int T,int L,int K,double r, Col_Vector &C1,Col_Vector &C2, Col_Vector &C3):T_(T),L_(L),K_(K),r_(r),C1_(C1),C2_(C2),C3_(C3)
+{
+}
+
+Payoff::Payoff(const Payoff &p):T_(p.get_T()),L_(p.get_L()),K_(p.get_K()),r_(p.get_r()),C1_(p.get_C1()),C2_(p.get_C2()),C3_(p.get_C3())
+{
+}
+
+int Payoff::max(int K, int s){
+	if(K>=s)
+		return K;
+	else
+		return s;
+}

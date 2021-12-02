@@ -1,0 +1,5 @@
+#include "../cranck_nicholson2.h"
+
+Cranck_Nicholson::Cranc_Nicholson(int Ns, int Nt,const Payoff &p): Ns_(Ns), Nt_(Nt), p_(p)
+{
+}

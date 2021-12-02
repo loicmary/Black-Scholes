@@ -1,0 +1,5 @@
+#include "../include diff_finies.h"
+
+Diff_finies::Diff_finies(int Ns, int Nt,double sigma,const Payoff &p): Ns_(Ns), Nt_(Nt),sigma_(sigma), p_(p), step_(0)
+{
+}

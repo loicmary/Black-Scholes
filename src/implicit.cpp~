@@ -1,0 +1,9 @@
+#include "../include/implicit.h"
+#include "../include/col_vector.h"
+
+
+Implicit::Implicit(int Ns, int Nt, double sigma, const Payoff &p): Diff_finies(Ns, Nt, sigma, p)
+{
+}
+
+Col_Vector

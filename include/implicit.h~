@@ -1,0 +1,8 @@
+#ifndef IMPLICIT_H
+#define IMPLICIT_H
+
+#include "../include/payoff2.h"
+#include "../include/col_vector.h"
+
+
+#endif

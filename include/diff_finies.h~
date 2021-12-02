@@ -1,0 +1,32 @@
+#ifndef DIFF_FINIES_H
+#define DIFF_FINIES_H
+
+#include "../include/Col_Vector.h"
+#include "../include/payoff2.h"
+
+class Diff_finies {
+ protected:
+  int Ns_;
+  int Nt_;
+  double sigma_;
+  const Payoff& p_;
+  int step_;
+
+ public:
+  Diff_finies(int Ns, int Nt, double sigma, const Payoff &p);
+
+ public:
+  int get_Ns() const { return Ns_; };
+  int get_Nt() const { return Nt_; };
+  double get_sigma() const { return sigma_; };
+  int get_step() const { return step_; };
+  const Payoff& get_payoff() const { return p_; };
+
+ public:
+  virtual Col_Vector get_init_cond const =0;
+  virtual Col_Vector step_forward(const Col_Vector &C);
+  bool is_finished() const;
+  
+}
+
+#endif
