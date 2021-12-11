@@ -1,11 +1,14 @@
-Le fichier qui utilise l'ensemble des classes que nous avons crée pour construire le vecteur C(0,.) est main.cpp
-Nous avons donc crée un Makefile pour simplifier la compilation.
-Voici donc la procédure :
-    1) il faut taper make à la racine du dossier
-    2) aller dans le sous dossier bin et taper ./main
 
-L'arboresence du projet est la suivante:
-bin : -> les executables
-build : -> les .o
-include : -> les .h
-src : -> les .cpp
+The goal of this project is to solve numerically the Black & Scholes equation in C++. I done this with a fellow student in the project of a course to learn C++ !
+
+The structure of the projet is the following : 
+bin : ->  executables
+build : ->  .o files
+include : ->  .h files
+src : ->  .cpp files
+
+The file that gives the solution of the differential equation is main.cpp (it returns the vector C(0,.).
+We made a Makefile to simplify the compilation :
+The process is the following with a shell :
+ - type make at the root of the folder
+ - go to the subfolder "bin" and type "./main"
